@@ -6,11 +6,68 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $dark;
+  font-family: 'Karla', sans-serif;
+  text-align: center;
+}
+
+.header {
+  color: $apricot;
+  position: fixed;
+  right: 10%;
+  bottom: 10%;
+}
+
+.homepage {
+  &__title {
+    display: inline-block;
+    font-size: 28px;
+    font-weight: bold;
+    max-width: 500px;
+    text-transform: uppercase;
+  }
+}
+
+@mixin reset-list {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 25px 0;
+  }
+
+  &__item {
+    font-size: 15px;
+    text-transform: uppercase;
+    list-style: none;
+    margin: 0 25px;
+  }
+
+  &__link {
+    color: $dark;
+    text-decoration: none;
+  }
+
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: azure;
+
+  @include reset-list;
+}
+
+.footer-navigation {
+  @include reset-list;
 }

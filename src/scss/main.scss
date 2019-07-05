@@ -69,7 +69,7 @@ body {
 }
 
 .instagram {
-  padding: 75px 125px;
+  padding: 75px 12%;
 
   &__header {
     font-size: 28px;
@@ -131,4 +131,24 @@ body {
 
 .footer-navigation {
   @include reset-list;
+}
+
+@media (max-width:850px) {
+  .instagram {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width:450px) {
+  .header {
+    position: static;
+  }
+
+  .homepage__title {
+    width: 90%;
+  }
+
+  .homepage__photo--2 {
+    width: 100%;
+  }
 }

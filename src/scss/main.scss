@@ -104,6 +104,7 @@ body {
 
     &--first {
       flex-grow: 1;
+      text-align: right;
     }
 
     &--last {
@@ -137,6 +138,20 @@ body {
   .instagram {
     padding: 75px 0;
   }
+
+  .navigation__list {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .navigation__item {
+    padding: 2% 0;
+
+    &--last {
+      text-align: center;
+      padding: 8% 0 2%;
+    }
+  }
 }
 
 @media (max-width:450px) {
@@ -151,4 +166,6 @@ body {
   .homepage__photo--2 {
     width: 100%;
   }
+
+
 }

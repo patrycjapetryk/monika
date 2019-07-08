@@ -19,11 +19,11 @@ body {
 }
 
 .header {
+  bottom: 10%;
   color: $apricot;
+  max-width: 180px;
   position: fixed;
   right: 10%;
-  bottom: 10%;
-  max-width: 180px;
 }
 
 .homepage {
@@ -38,9 +38,9 @@ body {
     display: inline-block;
     font-size: 28px;
     font-weight: bold;
+    margin: 0 0 75px;
     text-transform: uppercase;
     width: 500px;
-    margin: 0 0 75px;
   }
 
   &__photo {
@@ -56,14 +56,14 @@ body {
     }
 
     &--m {
-      width: 50%;
       padding: 10%;
+      width: 50%;
     }
   }
 
   &__image {
-    width: 100%;
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 }
@@ -82,12 +82,21 @@ body {
   }
 
   &__image {
-    width: 100%;
     display: block;
+    width: 100%;
   }
 }
 
 @mixin reset-list {
+
+  &__button {
+    border: 0;
+    background-color: transparent;
+    display: none;
+    font-size: 15px;
+    margin: 0 25px;
+    text-transform: uppercase;
+  }
 
   &__list {
     display: flex;
@@ -98,9 +107,9 @@ body {
 
   &__item {
     font-size: 15px;
-    text-transform: uppercase;
     list-style: none;
     margin: 0 25px;
+    text-transform: uppercase;
 
     &--first {
       flex-grow: 1;
@@ -125,7 +134,10 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: azure;
+
+  &:hover {
+    background-color: #fff;
+  }
 
   @include reset-list;
 }
@@ -134,28 +146,11 @@ body {
   @include reset-list;
 }
 
+/* mobile */
+
 @media (max-width:850px) {
-  .instagram {
-    padding: 75px 0;
-  }
-
-  .navigation__list {
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  .navigation__item {
-    padding: 2% 0;
-
-    &--last {
-      text-align: center;
-      padding: 8% 0 2%;
-    }
-  }
-}
-
-@media (max-width:450px) {
   .header {
+    max-width: 60%;
     position: static;
   }
 
@@ -163,9 +158,54 @@ body {
     width: 90%;
   }
 
+  .instagram {
+    padding: 75px 0;
+  }
+
+  .navigation {
+    &__button {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+
+    &__list {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    &__item {
+      display: none;
+      font-size: 20px;
+      margin: 0;
+      padding: 2.5% 0;
+
+      &--first {
+        display: inline-block;
+        // padding: 5% 0;
+      }
+
+      &--last {
+        padding: 10% 0;
+        text-align: center;
+      }
+
+      &--active {
+        display: inline-block;
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width:450px) {
+
+
   .homepage__photo--2 {
     width: 100%;
   }
-
-
 }

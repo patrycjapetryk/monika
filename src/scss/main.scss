@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:700|Karla:400,400i,700,700i&display=swap&subset=latin-ext');
 @import "_normalize";
 @import "_variables";
 
@@ -21,6 +22,9 @@ body {
 .header {
   bottom: 10%;
   color: $apricot;
+  font-family: 'Caveat', sans-serif;
+  font-size: 32px;
+  line-height: 1.2em;
   max-width: 180px;
   position: fixed;
   right: 10%;
@@ -55,7 +59,7 @@ body {
       width: 50%;
     }
 
-    &--m {
+    &--small {
       padding: 10%;
       width: 50%;
     }
@@ -144,6 +148,7 @@ body {
 
 .footer-navigation {
   @include reset-list;
+  padding-bottom: 50px;
 }
 
 /* mobile */
@@ -186,7 +191,6 @@ body {
 
       &--first {
         display: inline-block;
-        // padding: 5% 0;
       }
 
       &--last {
@@ -203,7 +207,6 @@ body {
 }
 
 @media (max-width:450px) {
-
 
   .homepage__photo--2 {
     width: 100%;

@@ -146,9 +146,12 @@ body {
   @include reset-list;
 }
 
+.footer {
+  padding: 100px 0 50px;
+}
+
 .footer-navigation {
   @include reset-list;
-  padding-bottom: 50px;
 }
 
 /* mobile */

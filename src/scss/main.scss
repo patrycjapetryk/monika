@@ -28,6 +28,11 @@ body {
   max-width: 180px;
   position: fixed;
   right: 10%;
+
+  @media (max-width:850px) {
+    max-width: 60%;
+    position: static;
+  }
 }
 
 .homepage {
@@ -45,6 +50,10 @@ body {
     margin: 0 0 75px;
     text-transform: uppercase;
     width: 500px;
+
+    @media (max-width:850px) {
+      width: 90%;
+    }
   }
 
   &__photo {
@@ -57,6 +66,10 @@ body {
 
     &--2 {
       width: 50%;
+
+      @media (max-width:450px) {
+        width: 100%;
+      }
     }
 
     &--small {
@@ -75,6 +88,10 @@ body {
 .instagram {
   padding: 75px 12%;
 
+  @media (max-width:850px) {
+    padding: 75px 0;
+  }
+
   &__header {
     font-size: 28px;
     font-weight: bold;
@@ -91,7 +108,7 @@ body {
   }
 }
 
-@mixin reset-list {
+.navigation {
 
   &__button {
     border: 0;
@@ -100,6 +117,12 @@ body {
     font-size: 15px;
     margin: 0 25px;
     text-transform: uppercase;
+
+    @media (max-width:850px) {
+      cursor: pointer;
+      display: inline-block;
+      font-size: 20px;
+    }
   }
 
   &__list {
@@ -107,6 +130,13 @@ body {
     justify-content: center;
     margin: 0;
     padding: 25px 0;
+
+    &--main {
+      @media (max-width:850px) {
+        flex-direction: column;
+        padding: 0;
+      }
+    }
   }
 
   &__item {
@@ -115,14 +145,39 @@ body {
     margin: 0 25px;
     text-transform: uppercase;
 
+    &--main {
+      @media (max-width:850px) {
+        font-size: 20px;
+        display: none;
+        margin: 0;
+        padding: 2.5% 0;
+      }
+    }
+
     &--first {
       flex-grow: 1;
       text-align: right;
+
+      @media (max-width:850px) {
+        display: inline-block;
+      }
     }
 
     &--last {
       flex-grow: 1;
       text-align: right;
+
+      @media (max-width:850px) {
+        padding: 10% 0;
+        text-align: center;
+      }
+    }
+
+    &--active {
+      @media (max-width:850px) {
+        display: inline-block;
+        background-color: #fff;
+      }
     }
   }
 
@@ -131,87 +186,21 @@ body {
     text-decoration: none;
   }
 
-}
-
-.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-
-  &:hover {
-    background-color: #fff;
-  }
-
-  @include reset-list;
-}
-
-.footer {
-  padding: 100px 0 50px;
-}
-
-.footer-navigation {
-  @include reset-list;
-}
-
-/* mobile */
-
-@media (max-width:850px) {
-  .header {
-    max-width: 60%;
-    position: static;
-  }
-
-  .homepage__title {
-    width: 90%;
-  }
-
-  .instagram {
-    padding: 75px 0;
-  }
-
-  .navigation {
-    &__button {
-      cursor: pointer;
-      display: inline-block;
-      font-size: 20px;
-    }
+  &--main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 
     &:hover {
-      background-color: transparent;
-    }
-
-    &__list {
-      flex-direction: column;
-      padding: 0;
-    }
-
-    &__item {
-      display: none;
-      font-size: 20px;
-      margin: 0;
-      padding: 2.5% 0;
-
-      &--first {
-        display: inline-block;
-      }
-
-      &--last {
-        padding: 10% 0;
-        text-align: center;
-      }
-
-      &--active {
-        display: inline-block;
+      @media (min-width:850px) {
         background-color: #fff;
       }
     }
   }
+
 }
 
-@media (max-width:450px) {
-
-  .homepage__photo--2 {
-    width: 100%;
-  }
+.footer {
+  padding: 100px 0 50px;
 }

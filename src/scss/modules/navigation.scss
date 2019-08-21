@@ -27,12 +27,19 @@
                 padding: 0;
             }
         }
+
+        &--gallery {
+            flex-direction: column;
+            text-align: left;
+            margin-left: 25%;
+            margin-top: 100px;
+        }
     }
 
     &__item {
         font-size: 15px;
         list-style: none;
-        margin: 0 25px;
+        margin: 10px 25px;
         text-transform: uppercase;
 
         &--main {
@@ -89,4 +96,11 @@
         }
     }
 
+    &--gallery {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 30%;
+    }
 }

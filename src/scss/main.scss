@@ -10,6 +10,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -34,7 +35,6 @@ body {
 
 .header {
   bottom: 10%;
-  color: $apricot;
   font-family: 'Caveat', sans-serif;
   font-size: 32px;
   line-height: 1.2em;
@@ -45,6 +45,11 @@ body {
   @media (max-width:$mobile) {
     max-width: 60%;
     position: static;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $apricot;
   }
 }
 

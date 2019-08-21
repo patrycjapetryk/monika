@@ -4,6 +4,7 @@
 
 @import "modules/navigation.scss";
 @import "modules/homepage.scss";
+@import "modules/gallery.scss";
 
 
 html {
@@ -21,6 +22,11 @@ body {
   font-family: 'Karla', sans-serif;
   text-align: center;
 }
+
+// .main {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
 
 .footer {
   padding: 100px 0 50px;

@@ -4,12 +4,15 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width:$mobile) {
+        margin-left: 0;
+    }
+
     &__header {
         width: 100%;
     }
 
     &__title {
-        display: inline-block;
         font-size: 28px;
         font-weight: bold;
         margin: 0 0 75px;
@@ -17,8 +20,9 @@
         width: 500px;
         display: none;
 
-        @media (max-width:850px) {
+        @media (max-width:$mobile) {
             width: 90%;
+            display: inline-block;
         }
     }
 
@@ -27,27 +31,53 @@
 
         &--one-left {
             width: 70%;
+
+            @media (max-width:$mobile) {
+                width: 90%;
+            }
         }
 
         &--one-center {
             width: 70%;
             margin-left: 15%;
+
+            @media (max-width:$mobile) {
+                width: 90%;
+                margin-left: 5%;
+            }
         }
 
         &--one-right {
             width: 70%;
             margin-left: 30%;
+
+            @media (max-width:$mobile) {
+                width: 90%;
+                margin-left: 10%;
+            }
         }
 
         &--two-left {
             width: 30%;
             margin-right: 5%;
+
+            @media (max-width:$mobile) {
+                width: 40%;
+                margin-right: 0;
+                margin-left: 10%;
+            }
         }
 
         &--two-center {
             width: 30%;
             margin-right: 5%;
             margin-left: 15%;
+
+            @media (max-width:$mobile) {
+                width: 40%;
+                margin-right: 0;
+                margin-left: 0;
+            }
         }
     }
 

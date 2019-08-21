@@ -23,11 +23,6 @@ body {
   text-align: center;
 }
 
-// .main {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
 .footer {
   padding: 100px 0 50px;
 
@@ -46,7 +41,7 @@ body {
   position: fixed;
   right: 10%;
 
-  @media (max-width:850px) {
+  @media (max-width:$mobile) {
     max-width: 60%;
     position: static;
   }
@@ -55,7 +50,7 @@ body {
 .instagram {
   padding: 75px 12%;
 
-  @media (max-width:850px) {
+  @media (max-width:$mobile) {
     padding: 75px 0;
   }
 

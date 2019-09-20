@@ -1,4 +1,4 @@
-# photographer & designer online portfolio
+# Photographer & designer online portfolio
 
 This is online portfolio made for Monika Lewandowska - polish designer and photographer. It is still work in progress.. 🔥.
 
@@ -10,7 +10,7 @@ This is online portfolio made for Monika Lewandowska - polish designer and photo
 - FLEXBOX
   ...
 
-# built with gulp
+# Built with gulp
 
 `npm install -g gulp-cli`
 
@@ -19,5 +19,9 @@ This is online portfolio made for Monika Lewandowska - polish designer and photo
 `gulp`
 
 To publish your page using github pages use `npm run deploy`
+
+## 
+
+Online version: https://patrycjapetryk.github.io/monika/
 
 

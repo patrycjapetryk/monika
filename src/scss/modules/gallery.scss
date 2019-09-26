@@ -1,88 +1,85 @@
 .gallery {
-    margin-left: 30%;
-    padding-top: 90px;
-    display: flex;
-    flex-wrap: wrap;
+	margin-left: 30%;
+	padding-top: 90px;
+	display: flex;
+	flex-wrap: wrap;
 
-    @media (max-width:$mobile) {
-        margin-left: 0;
-    }
+	@media (max-width: $mobile) {
+		margin-left: 0;
+	}
 
-    &__header {
-        width: 100%;
-    }
+	&__header {
+		width: 100%;
+		display: none;
+		@media (max-width: $mobile) {
+			display: inline-block;
+		}
+	}
 
-    &__title {
-        font-size: 28px;
-        font-weight: bold;
-        margin: 0 0 75px;
-        text-transform: uppercase;
-        width: 500px;
-        display: none;
+	&__title {
+		font-size: 28px;
+		font-weight: bold;
+		margin: 0 0 75px;
+		text-transform: uppercase;
+		width: 90%;
+	}
 
-        @media (max-width:$mobile) {
-            width: 90%;
-            display: inline-block;
-        }
-    }
+	&__photo {
+		margin: 0 0 75px;
 
-    &__photo {
-        margin: 0 0 75px;
+		&--one-left {
+			width: 70%;
 
-        &--one-left {
-            width: 70%;
+			@media (max-width: $mobile) {
+				width: 90%;
+			}
+		}
 
-            @media (max-width:$mobile) {
-                width: 90%;
-            }
-        }
+		&--one-center {
+			width: 70%;
+			margin-left: 15%;
 
-        &--one-center {
-            width: 70%;
-            margin-left: 15%;
+			@media (max-width: $mobile) {
+				width: 90%;
+				margin-left: 5%;
+			}
+		}
 
-            @media (max-width:$mobile) {
-                width: 90%;
-                margin-left: 5%;
-            }
-        }
+		&--one-right {
+			width: 70%;
+			margin-left: 30%;
 
-        &--one-right {
-            width: 70%;
-            margin-left: 30%;
+			@media (max-width: $mobile) {
+				width: 90%;
+				margin-left: 10%;
+			}
+		}
 
-            @media (max-width:$mobile) {
-                width: 90%;
-                margin-left: 10%;
-            }
-        }
+		&--two-left {
+			width: 30%;
+			margin-right: 5%;
 
-        &--two-left {
-            width: 30%;
-            margin-right: 5%;
+			@media (max-width: $mobile) {
+				width: 40%;
+				margin-right: 0;
+				margin-left: 10%;
+			}
+		}
 
-            @media (max-width:$mobile) {
-                width: 40%;
-                margin-right: 0;
-                margin-left: 10%;
-            }
-        }
+		&--two-center {
+			width: 30%;
+			margin-right: 5%;
+			margin-left: 15%;
 
-        &--two-center {
-            width: 30%;
-            margin-right: 5%;
-            margin-left: 15%;
+			@media (max-width: $mobile) {
+				width: 40%;
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
 
-            @media (max-width:$mobile) {
-                width: 40%;
-                margin-right: 0;
-                margin-left: 0;
-            }
-        }
-    }
-
-    &__image {
-        width: 100%;
-    }
-
+	&__image {
+		width: 100%;
+	}
 }

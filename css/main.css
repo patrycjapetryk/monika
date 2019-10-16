@@ -350,7 +350,7 @@ template {
 .navigation__item {
   font-size: 15px;
   list-style: none;
-  margin: 10px 25px;
+  padding: 10px 25px;
   text-transform: uppercase; }
   @media (max-width: 850px) {
     .navigation__item--main {
@@ -383,6 +383,8 @@ template {
 .navigation__link {
   color: #000000;
   text-decoration: none; }
+  .navigation__link--active {
+    border-bottom: 2px solid #E97674; }
 
 .navigation--main {
   position: fixed;
@@ -452,18 +454,17 @@ template {
     .gallery {
       margin-left: 0; } }
   .gallery__header {
-    width: 100%; }
+    width: 100%;
+    display: none; }
+    @media (max-width: 850px) {
+      .gallery__header {
+        display: inline-block; } }
   .gallery__title {
     font-size: 28px;
     font-weight: bold;
     margin: 0 0 75px;
     text-transform: uppercase;
-    width: 500px;
-    display: none; }
-    @media (max-width: 850px) {
-      .gallery__title {
-        width: 90%;
-        display: inline-block; } }
+    width: 90%; }
   .gallery__photo {
     margin: 0 0 75px; }
     .gallery__photo--one-left {

@@ -1,13 +1,13 @@
-@import url("https://fonts.googleapis.com/css?family=Caveat:700");
-@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap&subset=latin-ext");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext");
-@import "_normalize";
-@import "_variables";
+@import url('https://fonts.googleapis.com/css?family=Caveat:700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext');
+@import '_normalize';
+@import '_variables';
 
-@import "modules/navigation.scss";
-@import "modules/homepage.scss";
-@import "modules/gallery.scss";
-@import "modules/about.scss";
+@import 'modules/navigation.scss';
+@import 'modules/homepage.scss';
+@import 'modules/gallery.scss';
+@import 'modules/about.scss';
 
 html {
   box-sizing: border-box;
@@ -22,7 +22,7 @@ html {
 
 body {
   color: $dark;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
@@ -35,9 +35,9 @@ body {
 }
 
 .header {
-  bottom: 10%;
-  font-family: "Caveat", sans-serif;
-  font-size: 32px;
+  bottom: 5%;
+  font-family: 'Caveat', sans-serif;
+  font-size: 36px;
   line-height: 1.2em;
   max-width: 180px;
   position: fixed;

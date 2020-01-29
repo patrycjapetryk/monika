@@ -32,6 +32,12 @@ body {
   &__path svg {
     max-width: 80%;
   }
+
+  &__paragraph {
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin-top: 180px;
+  }
 }
 
 .header {
@@ -55,11 +61,7 @@ body {
 }
 
 .instagram {
-  padding: 75px 12%;
-
-  @media (max-width: $mobile) {
-    padding: 75px 0;
-  }
+  padding: 75px 10%;
 
   &__header {
     font-size: 28px;
@@ -69,6 +71,15 @@ body {
 
   &__gallery {
     display: flex;
+    @media (max-width: $mobile) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__link {
+    @media (max-width: $mobile) {
+      width: 50%;
+    }
   }
 
   &__image {

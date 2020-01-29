@@ -1,4 +1,6 @@
 .navigation {
+  pointer-events: none;
+
   &__button {
     border: 0;
     background-color: transparent;
@@ -6,6 +8,7 @@
     font-size: 15px;
     margin: 0 25px;
     text-transform: uppercase;
+    pointer-events: all;
 
     @media (max-width: $mobile) {
       cursor: pointer;
@@ -81,9 +84,15 @@
   &__link {
     color: $dark;
     text-decoration: none;
+    padding-bottom: 4px;
+    pointer-events: all;
 
     &--active {
-      border-bottom: 2px solid $apricot;
+      // border-bottom: 2px solid $apricot;
+      background-image: url('../assets/img/linia.svg');
+      background-size: auto 6px;
+      background-position: bottom left;
+      background-repeat: repeat-x;
     }
   }
 
@@ -92,6 +101,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    transition: 0.3s linear;
     z-index: 2;
 
     &:hover {

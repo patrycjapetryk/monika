@@ -20,8 +20,6 @@ This is online portfolio made for Monika Lewandowska - polish designer and photo
 
 To publish your page using github pages use `npm run deploy`
 
-## 
+##
 
-Online version: https://patrycjapetryk.github.io/monika/
-
-
+Online version: https://designelle.eu
